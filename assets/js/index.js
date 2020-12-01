@@ -37,7 +37,7 @@ function gitUserInfo() {
     })
 }
 function rendAvatar(user) {
-    console.log(user);
+    // console.log(user);
     var name = user.nickname || user.username
     $('#welcome').html('欢迎&nbsp;&nbsp;' + name)
     if (user.user_pic !== null) {
@@ -46,7 +46,7 @@ function rendAvatar(user) {
     } else {
         $('.layui-nav-img').hide()
         var first = name[0].toUpperCase()
-        console.log(first);
+        // console.log(first);
         $('.text-avent').html(first).show()
     }
 }
